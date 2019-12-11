@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#424242"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/user2_imageView"
+        style="@style/imageStyle"
+
+        app:layout_constraintVertical_weight=".1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/messageView_user2"
+        app:layout_constraintEnd_toStartOf="@id/user2_name"
+        />
+
+    <TextView
+        android:id="@+id/user2_name"
+        style="@style/titleViewStyle"
+        android:textSize="24sp"
+        android:text="Dalo Chinkhwangwa"
+
+        app:layout_constraintVertical_weight=".1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/user2_imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/messageView_user2"/>
+
+    <TextView
+        android:id="@+id/messageView_user2"
+        style="@style/textViewStyle"
+
+        app:layout_constraintVertical_weight=".6"
+
+        app:layout_constraintBottom_toTopOf="@id/editText_user2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/user2_name" />
+
+    <EditText
+        android:id="@+id/editText_user2"
+        style="@style/editTextStyle"
+        android:hint="message Joel"
+
+        app:layout_constraintVertical_weight=".4"
+        app:layout_constraintHorizontal_weight=".75"
+
+        app:layout_constraintTop_toBottomOf="@id/messageView_user2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/sendButton_user2" />
+    <Button
+        android:id="@+id/sendButton_user2"
+        style="@style/buttonStyle"
+
+        app:layout_constraintVertical_weight=".4"
+        app:layout_constraintHorizontal_weight=".25"
+
+        app:layout_constraintTop_toBottomOf="@+id/messageView_user2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/editText_user2"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

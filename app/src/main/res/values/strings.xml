@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MessagingApplication</string>
+    <string name="user2_imageSrc"><![CDATA[https://avatars3.githubusercontent.com/u/47256641?s=400&v=4]]></string>
+    <string name="user1_imageSrc">https://cdn4.iconfinder.com/data/icons/diversity-v2-0-volume-03/64/superhero-batman-dark-knight-512.png</string>
+</resources>
